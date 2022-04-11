@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu{
+    text-align: center;
+    background-color: skyblue;
+}
+.header-menu ul{
+
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -5px;
+    position: relative;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border-right: 2px solid #ddd;
+}
+.header-menu ul li:first-child{
+    border-left: 2px solid #ddd;
+}
+
+.header-menu ul li:hover > a{
+    background-color: rgb(138, 241, 255);
+    color: yellow;
+}
+
+/* dropdown menu */
+
+.header-menu ul li .dropdown-menu li a{
+    color: white;
+    margin-left: -5px;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    display: block;
+}
+.header-menu ul li .dropdown-menu li{
+    border: none;
+    margin-left: 5px;
+    display: block;
+    
+}
+.header-menu ul li .dropdown-menu{
+    position: absolute;
+    background-color: blue;
+    width: 152px;
+    border-top: 2px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+
+/* hover */
+
+.header-menu ul li:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+.header-menu ul li .dropdown-menu li a:hover{
+    color: deeppink;
+}
+
+
+
+
+/* icon menu */
+
+
+.icon-menu{
+    background-color: skyblue;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 300px;
+}
+
+.icon-menu ul li a{
+    text-decoration: none;
+    color: rgb(27, 10, 253);
+}
+.icon-menu ul li{
+    display: inline-block;
+    background-color: #91ff13;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.icon-menu ul{
+    list-style: none;
+}
+
+.icon-menu ul li:hover{
+    background-color: rgba(255, 0, 149, 0.822);
+    transition: .5s;
+}
